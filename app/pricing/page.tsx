@@ -11,8 +11,10 @@ const packages = [
 export default function Pricing() {
   return <><Header /><main>
     <section className="pricing-hero">
-      <Image className="pricing-hero-image" src="/investment-hero-frame-wall.jpg" alt="A custom gallery wall displaying warm family photographs in a bright California home" fill priority sizes="100vw" />
       <div className="pricing-hero-copy"><p className="eyebrow">The investment</p><h1>Photos you love.<br /><em>Help displaying them.</em></h1><p>Every session includes clear planning, a full edited proof gallery, your favorite digital files, and the option for hands-on artwork design—with absolutely no pressure.</p></div>
+      <div className="pricing-hero-media">
+        <Image className="pricing-hero-image" src="/investment-hero-frame-wall.jpg" alt="A custom gallery wall displaying warm family photographs in a bright California home" fill priority sizes="(max-width: 760px) 100vw, 50vw" />
+      </div>
     </section>
     <section className="pricing-list">
       {packages.map((item, i) => <article className="price-card" key={item.name}><span className="service-number">0{i + 1}</span><p className="eyebrow">{item.note}</p><h2>{item.name}</h2><p className="price">Session fee <strong>${item.price}</strong></p><ul>{item.features.map(feature => <li key={feature}>{feature}</li>)}</ul><a className="button button-dark" href="mailto:amy@twigandoakphotography.com">Inquire about this session</a></article>)}

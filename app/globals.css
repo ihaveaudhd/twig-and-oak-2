@@ -140,11 +140,11 @@ h1 em { font-family: var(--font-hand); font-size: 1.05em; font-weight: 400; }
 .cta-section { padding: var(--section-space) 24px; text-align: center; background: var(--ivory); }
 .cta-section .button { margin-top: 34px; }
 .button-dark { color: var(--white); background: var(--navy); }
-.pricing-hero { position: relative; min-height: 780px; padding: 190px 6vw 100px; display: flex; justify-content: flex-end; align-items: center; overflow: hidden; background: #f4efe8; }
-.pricing-hero::after { content: ""; position: absolute; inset: 0; background: linear-gradient(90deg, transparent 40%, rgba(251,248,243,.12) 58%, rgba(251,248,243,.72) 100%); pointer-events: none; }
+.pricing-hero { min-height: 790px; padding-top: 148px; display: grid; grid-template-columns: 1fr 1fr; background: #f4efe8; }
+.pricing-hero-media { position: relative; min-height: 642px; }
 .pricing-hero-image { object-fit: cover; object-position: center; }
-.pricing-hero-copy { position: relative; z-index: 1; width: min(48%, 700px); text-align: center; }
-.pricing-hero h1 { font-size: clamp(54px, 7vw, 100px); }
+.pricing-hero-copy { width: min(86%, 680px); margin: auto; padding: 72px 30px; text-align: center; }
+.pricing-hero h1 { font-size: clamp(52px, 5.6vw, 86px); }
 .pricing-hero h1 em { font-family: var(--font-serif); font-style: italic; }
 .pricing-hero-copy > p:last-child { max-width: 620px; margin: 30px auto 0; }
 .pricing-list { width: var(--page); margin: auto; padding: 90px 0; display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
@@ -249,10 +249,10 @@ h1 em { font-family: var(--font-hand); font-size: 1.05em; font-weight: 400; }
   .experience-steps { padding-inline: 23px; }
   .steps, .pricing-list { grid-template-columns: 1fr; gap: 24px; }
   .pricing-list { width: calc(100vw - 44px); }
-  .pricing-hero { min-height: 790px; padding: 430px 23px 76px; align-items: flex-end; }
-  .pricing-hero::after { background: linear-gradient(0deg, rgba(251,248,243,.97) 0%, rgba(251,248,243,.9) 42%, rgba(251,248,243,.08) 66%, transparent 100%); }
-  .pricing-hero-image { object-position: 42% center; }
-  .pricing-hero-copy { width: 100%; }
+  .pricing-hero { min-height: 0; padding-top: 108px; display: flex; flex-direction: column-reverse; }
+  .pricing-hero-media { width: 100%; min-height: 66.67vw; }
+  .pricing-hero-image { object-position: center; }
+  .pricing-hero-copy { width: 100%; padding: 70px 23px 76px; }
   .pricing-hero h1 { font-size: clamp(48px, 14vw, 62px); }
   .pricing-note { padding-inline: 23px; }
   .about-page { padding-top: 140px; }
