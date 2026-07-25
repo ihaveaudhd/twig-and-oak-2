@@ -36,9 +36,10 @@ button { color: inherit; }
 .logo-lockup > span { font: 400 41px/1 var(--font-serif); letter-spacing: .015em; text-transform: lowercase; }
 .logo-lockup small { margin-top: 12px; font: 700 10px/1 var(--font-sans); letter-spacing: .46em; text-transform: uppercase; padding-left: .46em; }
 .desktop-nav { display: flex; align-items: center; gap: clamp(20px, 2.4vw, 38px); }
-.desktop-nav a, .site-footer nav a, .social-links a { font-size: 10px; font-weight: 400; letter-spacing: .13em; text-transform: uppercase; transition: color .3s; }
+.desktop-nav a { font-size: 14px; font-weight: 400; letter-spacing: .13em; text-transform: uppercase; transition: color .3s; }
+.site-footer nav a, .social-links a { font-size: 10px; font-weight: 400; letter-spacing: .13em; text-transform: uppercase; transition: color .3s; }
 .desktop-nav a:hover, .site-footer a:hover { color: var(--blue-dark); }
-.header-button { justify-self: end; padding: 12px 21px; color: var(--white); background: var(--blue-dark); border-radius: 2px; font-size: 9px; font-weight: 700; letter-spacing: .13em; text-transform: uppercase; transition: background .3s; }
+.header-button { justify-self: end; padding: 16px 27px; color: var(--white); background: var(--blue-dark); border-radius: 2px; font-size: 12px; font-weight: 700; letter-spacing: .13em; text-transform: uppercase; transition: background .3s; }
 .header-button:hover { background: var(--navy); }
 .menu-button, .mobile-menu { display: none; }
 
@@ -52,7 +53,7 @@ h1 { margin: 0; font-size: clamp(54px, 5vw, 80px); line-height: 1.04; letter-spa
 h1 em { font-family: var(--font-hand); font-size: 1.05em; font-weight: 400; }
 .hero-intro { max-width: 330px; margin: 36px 0 31px; font-size: 15px; line-height: 1.65; }
 .button-row { display: flex; flex-wrap: wrap; gap: 13px; }
-.button { min-height: 46px; padding: 13px 20px; display: inline-flex; align-items: center; justify-content: center; border: 1px solid transparent; border-radius: 2px; font-size: 9px; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; transition: background .3s, color .3s, border-color .3s; }
+.button { min-height: 60px; padding: 17px 26px; display: inline-flex; align-items: center; justify-content: center; border: 1px solid transparent; border-radius: 2px; font-size: 12px; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; transition: background .3s, color .3s, border-color .3s; }
 .primary-button { color: var(--white); background: var(--blue-dark); }
 .primary-button:hover { background: var(--navy); }
 .secondary-button { border-color: var(--blue-dark); background: transparent; }
