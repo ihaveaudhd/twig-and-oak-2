@@ -3,16 +3,16 @@ import { Footer, Header } from "./site-components";
 
 type Props = {
   eyebrow: string; title: string; italic: string; description: string;
-  hero: string; detail: string; gallery: string[]; prompt: string;
+  hero: string; heroPosition?: string; detail: string; gallery: string[]; prompt: string;
 };
 
-export function ServicePage({ eyebrow, title, italic, description, hero, detail, gallery, prompt }: Props) {
+export function ServicePage({ eyebrow, title, italic, description, hero, heroPosition = "center", detail, gallery, prompt }: Props) {
   return (
     <>
       <Header />
       <main>
         <section className="inner-hero">
-          <div className="inner-hero-image" style={{ backgroundImage: `url("${hero}")` }} />
+          <div className="inner-hero-image" style={{ backgroundImage: `url("${hero}")`, backgroundPosition: heroPosition }} />
           <div className="inner-hero-copy">
             <p className="eyebrow light">{eyebrow}</p>
             <h1>{title}<br /><em>{italic}</em></h1>
