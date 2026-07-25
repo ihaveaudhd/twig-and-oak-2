@@ -3,7 +3,7 @@ import Link from "next/link";
 import { Footer, Header } from "./site-components";
 
 const categories = [
-  { title: "Families", href: "/families", image: "/families-home.jpg", note: "Connection, laughter and the wonderfully real parts.", position: "50% 45%" },
+  { title: "Families", href: "/families", image: "/families-card-mondardo.jpg", note: "Connection, laughter and the wonderfully real parts.", position: "50% 50%" },
   { title: "Seniors", href: "/seniors", image: "/seniors-home.jpg", note: "Natural portraits that actually feel like them.", position: "50% 30%" },
   { title: "Maternity", href: "/maternity", image: "/maternity-home.jpg", note: "The beauty of this season, simply and honestly.", position: "50% 45%" },
   { title: "Newborn", href: "/newborn", image: "/newborn-home.jpg", note: "Tiny details. Big love. Gone so fast.", position: "50% 56%" },
