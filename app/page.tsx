@@ -41,7 +41,7 @@ export default function Home() {
             <p className="handwritten">Yes, wild kids and<br />reluctant dads are welcome. <span>♡</span></p>
           </div>
           <div className="hero-photo">
-            <Image src="/home-hero-silva.jpg" alt="Three brothers running through a sunlit California field beneath an oak tree" fill priority sizes="100vw" />
+            <Image src="/home-hero-retort.jpg" alt="A family exploring beneath a sprawling oak tree in golden evening light" fill priority sizes="100vw" />
           </div>
         </section>
 
