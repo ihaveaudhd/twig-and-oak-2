@@ -38,7 +38,7 @@ export default function Home() {
               <Link className="button primary-button" href="#galleries">View the galleries</Link>
               <Link className="button secondary-button" href="/pricing">Plan your session</Link>
             </div>
-            <p className="handwritten">Yes, wild kids and reluctant dads are welcome. <span>♡</span></p>
+            <p className="handwritten">Yes, wild kids and<br />reluctant dads are welcome. <span>♡</span></p>
           </div>
           <div className="hero-photo">
             <Image src="/home-hero-retort.jpg" alt="A family exploring beneath a sprawling oak tree in golden evening light" fill priority sizes="100vw" />
