@@ -61,7 +61,7 @@ h1 em { font-family: var(--font-hand); font-size: 1.05em; font-weight: 400; }
 .handwritten { margin: 42px 0 0; font: 400 21px/1.15 var(--font-hand); }
 .handwritten span { margin-left: 20px; color: var(--gold); font: 32px/1 var(--font-hand); }
 .hero-photo { position: absolute; inset: 0; overflow: hidden; }
-.hero-photo img { object-fit: cover; object-position: 54% 62%; }
+.hero-photo img { object-fit: cover; object-position: 34% 62%; }
 
 .category-grid { position: relative; z-index: 2; display: grid; grid-template-columns: repeat(4, 1fr); width: var(--page); margin: -80px auto 24px; padding: 8px; scroll-margin-top: 100px; background: var(--white); border-radius: 10px; overflow: hidden; }
 .category-card { min-width: 0; background: var(--white); border: 8px solid var(--white); }
@@ -201,7 +201,7 @@ h1 em { font-family: var(--font-hand); font-size: 1.05em; font-weight: 400; }
   .home-hero { min-height: max(850px, 100svh); display: block; }
   .home-hero::after { inset: 0; background: linear-gradient(0deg, rgba(251,248,243,.95) 0%, rgba(251,248,243,.82) 47%, rgba(251,248,243,.2) 78%, transparent 100%); }
   .hero-photo { position: absolute; inset: 0; min-height: 0; }
-  .hero-photo img { object-position: 56% 61%; }
+  .hero-photo img { object-position: 36% 61%; }
   .hero-copy { width: auto; min-height: max(850px, 100svh); margin: 0; padding: 380px 23px 120px; background: transparent; }
   h1 { font-size: clamp(50px, 15vw, 68px); }
   .hero-intro { margin-top: 28px; }
