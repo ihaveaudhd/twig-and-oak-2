@@ -1,0 +1,4 @@
+import { ServicePage } from "../service-page";
+export default function Maternity() {
+  return <ServicePage eyebrow="Maternity photography · East Bay" title="Feel comfortable." italic="Look incredible." description="Warm, natural maternity portraits with thoughtful posing, beautiful scenery, and no modeling experience required." hero="https://images.unsplash.com/photo-1531983412531-1f49a365ffed?auto=format&fit=crop&w=2000&q=90" detail="Most of my maternity clients tell me they are not “picture people.” I’ll help with flattering outfits, choose the light and landscape, and direct every movement so you can relax and enjoy this chapter." gallery={["https://images.unsplash.com/photo-1519994608014-9f12063b6c2e?auto=format&fit=crop&w=1000&q=85","https://images.unsplash.com/photo-1535571393765-ea44927160be?auto=format&fit=crop&w=1000&q=85","https://images.unsplash.com/photo-1527628173875-3c7bfd28ad78?auto=format&fit=crop&w=1000&q=85"]} prompt="You are becoming, too." />;
+}

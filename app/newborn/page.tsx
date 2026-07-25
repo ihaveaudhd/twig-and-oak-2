@@ -1,0 +1,4 @@
+import { ServicePage } from "../service-page";
+export default function Newborn() {
+  return <ServicePage eyebrow="Newborn photography · At home in the Bay Area" title="Tiny details." italic="Plenty of time." description="Relaxed two-to-three-hour sessions with room for feeding, soothing, siblings, and real life." hero="https://images.unsplash.com/photo-1522771930-78848d9293e8?auto=format&fit=crop&w=2000&q=90" detail="Newborn sessions happen at your baby’s pace. I’m patient through the cries, gentle with your little one, and equally comfortable wrangling an older sibling, a dog, and two tired new parents." gallery={["https://images.unsplash.com/photo-1519689680058-324335c77eba?auto=format&fit=crop&w=1000&q=85","https://images.unsplash.com/photo-1544126592-807ade215a0b?auto=format&fit=crop&w=1000&q=85","https://images.unsplash.com/photo-1492725764893-90b379c2b6e7?auto=format&fit=crop&w=1000&q=85"]} prompt="They’ll never be this little again." />;
+}

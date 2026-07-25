@@ -1,0 +1,46 @@
+import Link from "next/link";
+import { Footer, Header } from "./site-components";
+
+type Props = {
+  eyebrow: string; title: string; italic: string; description: string;
+  hero: string; detail: string; gallery: string[]; prompt: string;
+};
+
+export function ServicePage({ eyebrow, title, italic, description, hero, detail, gallery, prompt }: Props) {
+  return (
+    <>
+      <Header />
+      <main>
+        <section className="inner-hero">
+          <div className="inner-hero-image" style={{ backgroundImage: `url("${hero}")` }} />
+          <div className="inner-hero-copy">
+            <p className="eyebrow light">{eyebrow}</p>
+            <h1>{title}<br /><em>{italic}</em></h1>
+            <p>{description}</p>
+          </div>
+        </section>
+        <section className="editorial">
+          <p className="eyebrow">The heart of it</p>
+          <div className="editorial-grid">
+            <h2>Nothing stiff.<br />Nothing forced.<br /><em>Just you.</em></h2>
+            <div><p className="lead">{detail}</p><p>I’ll tell you where to stand, keep everyone moving, and make the experience feel easy. You’ll receive both beautifully posed portraits and candid moments full of real personality—plus help choosing a Bay Area location and outfits that photograph well.</p><Link className="text-link" href="/pricing">View pricing <span>→</span></Link></div>
+          </div>
+        </section>
+        <section className="gallery-strip">
+          {gallery.map((image, i) => <div key={image} className={`gallery-image image-${i + 1}`} style={{ backgroundImage: `url("${image}")` }} />)}
+        </section>
+        <section className="experience-steps">
+          <p className="eyebrow">A gentle, thoughtful process</p>
+          <h2>From hello to<br /><em>heirloom.</em></h2>
+          <div className="steps">
+            <div><span>01</span><h3>Plan</h3><p>Choose from my favorite Bay Area locations and get approachable, practical outfit guidance.</p></div>
+            <div><span>02</span><h3>Have fun</h3><p>I’ll guide the poses, engage the kids, and adapt when real family life inevitably happens.</p></div>
+            <div><span>03</span><h3>Make it art</h3><p>Select your favorite digital files or let me design prints, an album, or a gallery wall for your home.</p></div>
+          </div>
+        </section>
+        <section className="cta-section"><p className="eyebrow">Ready when you are</p><h2>{prompt}<br /><em>Let’s remember it.</em></h2><Link className="button button-dark" href="/pricing">Begin your story</Link></section>
+      </main>
+      <Footer />
+    </>
+  );
+}
