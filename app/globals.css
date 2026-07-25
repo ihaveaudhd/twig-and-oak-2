@@ -33,8 +33,8 @@ button { color: inherit; }
 .site-header.is-scrolled { height: 80px; background: rgba(251,248,243,.98); box-shadow: 0 1px 0 rgba(39,54,75,.12); backdrop-filter: blur(12px); }
 .brand { justify-self: start; }
 .logo-lockup { display: flex; width: max-content; flex-direction: column; align-items: center; line-height: 1; }
-.logo-lockup > span { font: 400 29px/1 var(--font-serif); letter-spacing: .015em; text-transform: lowercase; }
-.logo-lockup small { margin-top: 9px; font: 700 7px/1 var(--font-sans); letter-spacing: .46em; text-transform: uppercase; padding-left: .46em; }
+.logo-lockup > span { font: 400 41px/1 var(--font-serif); letter-spacing: .015em; text-transform: lowercase; }
+.logo-lockup small { margin-top: 12px; font: 700 10px/1 var(--font-sans); letter-spacing: .46em; text-transform: uppercase; padding-left: .46em; }
 .desktop-nav { display: flex; align-items: center; gap: clamp(20px, 2.4vw, 38px); }
 .desktop-nav a, .site-footer nav a, .social-links a { font-size: 10px; font-weight: 400; letter-spacing: .13em; text-transform: uppercase; transition: color .3s; }
 .desktop-nav a:hover, .site-footer a:hover { color: var(--blue-dark); }
