@@ -75,7 +75,7 @@ export default function Home() {
 
         <section className="about-preview">
           <div className="about-image">
-            <Image src="/seniors-home.jpg" alt="Amy, photographer and founder of Twig and Oak" fill sizes="(max-width: 800px) 100vw, 30vw" style={{ objectPosition: "50% 28%" }} />
+            <Image src="/about-family-anderson.jpg" alt="Amy with her husband and two children in the golden California hills" fill sizes="(max-width: 800px) 100vw, 30vw" style={{ objectPosition: "50% 52%" }} />
           </div>
           <div className="about-copy">
             <p className="eyebrow">Hi, I’m Amy.</p>
