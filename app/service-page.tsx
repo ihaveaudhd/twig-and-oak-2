@@ -3,15 +3,15 @@ import { Footer, Header } from "./site-components";
 
 type Props = {
   eyebrow: string; title: string; italic: string; description: string;
-  hero: string; heroPosition?: string; detail: string; gallery: string[]; prompt: string;
+  hero: string; heroPosition?: string; heroBleed?: boolean; detail: string; gallery: string[]; prompt: string;
 };
 
-export function ServicePage({ eyebrow, title, italic, description, hero, heroPosition = "center", detail, gallery, prompt }: Props) {
+export function ServicePage({ eyebrow, title, italic, description, hero, heroPosition = "center", heroBleed = false, detail, gallery, prompt }: Props) {
   return (
     <>
       <Header />
       <main>
-        <section className="inner-hero">
+        <section className={`inner-hero${heroBleed ? " inner-hero--bleed" : ""}`}>
           <div className="inner-hero-image" style={{ backgroundImage: `url("${hero}")`, backgroundPosition: heroPosition }} />
           <div className="inner-hero-copy">
             <p className="eyebrow light">{eyebrow}</p>
