@@ -101,7 +101,11 @@ h1 em { font-family: var(--font-hand); font-size: 1.05em; font-weight: 400; }
 
 .site-footer { padding: 42px max(48px, calc((100vw - 1400px) / 2)) 28px; display: grid; grid-template-columns: 1fr auto auto; gap: 27px 45px; align-items: center; background: var(--ivory); border-top: 1px solid var(--gray); }
 .site-footer nav { display: flex; gap: 24px; }
-.social-links { display: flex; gap: 18px; }
+.social-links { display: flex; gap: 18px; align-items: center; }
+.social-links a { width: 25px; height: 25px; display: inline-flex; align-items: center; justify-content: center; }
+.social-links svg { width: 22px; height: 22px; display: block; fill: currentColor; }
+.social-links svg rect, .social-links svg circle:not(.social-dot) { fill: none; stroke: currentColor; stroke-width: 1.8; }
+.social-links svg .social-dot { fill: currentColor; stroke: none; }
 .site-footer > small { font-size: 9px; letter-spacing: .04em; }
 .site-footer > small:last-child { grid-column: 2 / 4; text-align: right; }
 
