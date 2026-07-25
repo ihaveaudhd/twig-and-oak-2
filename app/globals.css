@@ -110,9 +110,9 @@ h1 em { font-family: var(--font-hand); font-size: 1.05em; font-weight: 400; }
 .site-footer > small:last-child { grid-column: 2 / 4; text-align: right; }
 
 /* Existing interior-page system, aligned to the new brand tokens. */
-.inner-hero { min-height: 760px; padding-top: 108px; position: relative; display: flex; align-items: end; color: var(--white); }
-.inner-hero-image { position: absolute; inset: 108px 0 0; background-position: center; background-size: cover; }
-.inner-hero::after { content: ""; position: absolute; inset: 108px 0 0; background: linear-gradient(0deg, rgba(39,54,75,.7), transparent 65%); }
+.inner-hero { min-height: 790px; padding-top: 148px; position: relative; display: flex; align-items: end; color: var(--white); }
+.inner-hero-image { position: absolute; inset: 148px 0 0; background-position: center; background-size: cover; }
+.inner-hero::after { content: ""; position: absolute; inset: 148px 0 0; background: linear-gradient(0deg, rgba(39,54,75,.7), transparent 65%); }
 .inner-hero-copy { position: relative; z-index: 1; padding: 80px max(48px, calc((100vw - 1400px) / 2)); }
 .inner-hero-copy h1 { font-size: clamp(58px, 7vw, 104px); }
 .inner-hero-copy h1 em { font-family: var(--font-serif); font-style: italic; }
@@ -231,8 +231,8 @@ h1 em { font-family: var(--font-hand); font-size: 1.05em; font-weight: 400; }
   .site-footer { padding: 50px 23px 28px; grid-template-columns: 1fr; align-items: start; }
   .site-footer nav { grid-row: auto; grid-column: 1; flex-direction: column; gap: 11px; }
   .site-footer > small:last-child { grid-column: 1; text-align: left; }
-  .inner-hero { min-height: 690px; padding-top: 76px; }
-  .inner-hero-image, .inner-hero::after { inset-block-start: 76px; }
+  .inner-hero { min-height: 720px; padding-top: 108px; }
+  .inner-hero-image, .inner-hero::after { inset-block-start: 108px; }
   .inner-hero-copy { padding: 55px 23px; }
   .editorial { padding-inline: 23px; }
   .editorial-grid, .pricing-note { grid-template-columns: 1fr; gap: 40px; }
