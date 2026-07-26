@@ -48,7 +48,7 @@ export function ServicePage({ eyebrow, title, italic, description, hero, heroPos
             <EditorialCarousel images={gallery.map((image, i) => typeof image === "string" ? { src: image, alt: `Joyful California family photograph ${i + 1}` } : image)} />
           </section>
         )}
-        <section className="editorial">
+        <section className={`editorial${editorialGallery ? " editorial--dark" : ""}`}>
           <p className="eyebrow">The heart of it</p>
           <div className="editorial-grid">
             <h2>Nothing stiff.<br />Nothing forced.<br /><em>Just you.</em></h2>

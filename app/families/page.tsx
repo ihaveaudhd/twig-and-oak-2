@@ -7,8 +7,8 @@ export const metadata: Metadata = {
 };
 
 const familyGallery = [
-  { src: "/walnut-creek-family-photography-watson-brothers-dog.jpg", alt: "Three brothers running with their dog through the East Bay hills" },
   { src: "/walnut-creek-family-photography-cohen-candid-black-white.jpg", alt: "Parents swinging their laughing son during a candid black-and-white family session" },
+  { src: "/walnut-creek-family-photography-watson-brothers-dog.jpg", alt: "Three brothers running with their dog through the East Bay hills" },
   { src: "/east-bay-family-photography-weddell-siblings.jpg", alt: "Young siblings hugging in a golden California field" },
   { src: "/walnut-creek-family-photography-graham-child-portrait.jpg", alt: "Smiling boy in a timeless black-and-white family portrait" },
   { src: "/east-bay-family-photographer-golden-hills-portrait.jpg", alt: "Family of five photographed in the golden East Bay hills" },
