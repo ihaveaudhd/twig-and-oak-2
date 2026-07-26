@@ -7,7 +7,6 @@ export const metadata: Metadata = {
 };
 
 const familyGallery = [
-  { src: "/bay-area-family-photography-calica-beach-sunset.jpg", alt: "Calica family holding hands with their dog at a San Francisco Bay Area beach sunset" },
   { src: "/walnut-creek-family-photography-watson-brothers-dog.jpg", alt: "Three brothers running with their dog through the East Bay hills" },
   { src: "/walnut-creek-family-photography-cohen-candid-black-white.jpg", alt: "Parents swinging their laughing son during a candid black-and-white family session" },
   { src: "/east-bay-family-photography-weddell-siblings.jpg", alt: "Young siblings hugging in a golden California field" },
