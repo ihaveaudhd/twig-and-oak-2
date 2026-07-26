@@ -13,7 +13,7 @@ export function ServicePage({ eyebrow, title, italic, description, hero, heroPos
       <Header />
       <main>
         {splitHero ? (
-          <section className="pricing-hero service-split-hero">
+          <section className="pricing-hero">
             <div className="pricing-hero-copy">
               <p className="eyebrow">{eyebrow}</p>
               <h1>{title}<br /><em>{italic}</em></h1>
