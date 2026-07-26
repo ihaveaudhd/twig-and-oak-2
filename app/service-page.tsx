@@ -1,24 +1,38 @@
+import Image from "next/image";
 import Link from "next/link";
 import { Footer, Header } from "./site-components";
 
 type Props = {
   eyebrow: string; title: string; italic: string; description: string;
-  hero: string; heroPosition?: string; heroBleed?: boolean; detail: string; gallery: string[]; prompt: string;
+  hero: string; heroPosition?: string; heroBleed?: boolean; splitHero?: boolean; detail: string; gallery: string[]; prompt: string;
 };
 
-export function ServicePage({ eyebrow, title, italic, description, hero, heroPosition = "center", heroBleed = false, detail, gallery, prompt }: Props) {
+export function ServicePage({ eyebrow, title, italic, description, hero, heroPosition = "center", heroBleed = false, splitHero = false, detail, gallery, prompt }: Props) {
   return (
     <>
       <Header />
       <main>
-        <section className={`inner-hero${heroBleed ? " inner-hero--bleed" : ""}`}>
-          <div className="inner-hero-image" style={{ backgroundImage: `url("${hero}")`, backgroundPosition: heroPosition }} />
-          <div className="inner-hero-copy">
-            <p className="eyebrow light">{eyebrow}</p>
-            <h1>{title}<br /><em>{italic}</em></h1>
-            <p>{description}</p>
-          </div>
-        </section>
+        {splitHero ? (
+          <section className="pricing-hero">
+            <div className="pricing-hero-copy">
+              <p className="eyebrow">{eyebrow}</p>
+              <h1>{title}<br /><em>{italic}</em></h1>
+              <p>{description}</p>
+            </div>
+            <div className="pricing-hero-media">
+              <Image className="pricing-hero-image" src={hero} alt="A joyful family photography session in the California hills" fill priority sizes="(max-width: 760px) 100vw, 50vw" style={{ objectPosition: heroPosition }} />
+            </div>
+          </section>
+        ) : (
+          <section className={`inner-hero${heroBleed ? " inner-hero--bleed" : ""}`}>
+            <div className="inner-hero-image" style={{ backgroundImage: `url("${hero}")`, backgroundPosition: heroPosition }} />
+            <div className="inner-hero-copy">
+              <p className="eyebrow light">{eyebrow}</p>
+              <h1>{title}<br /><em>{italic}</em></h1>
+              <p>{description}</p>
+            </div>
+          </section>
+        )}
         <section className="editorial">
           <p className="eyebrow">The heart of it</p>
           <div className="editorial-grid">
