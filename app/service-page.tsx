@@ -2,12 +2,17 @@ import Image from "next/image";
 import Link from "next/link";
 import { Footer, Header } from "./site-components";
 
-type Props = {
-  eyebrow: string; title: string; italic: string; description: string;
-  hero: string; heroPosition?: string; heroBleed?: boolean; splitHero?: boolean; detail: string; gallery: string[]; prompt: string;
+type GalleryItem = string | {
+  src: string;
+  alt: string;
 };
 
-export function ServicePage({ eyebrow, title, italic, description, hero, heroPosition = "center", heroBleed = false, splitHero = false, detail, gallery, prompt }: Props) {
+type Props = {
+  eyebrow: string; title: string; italic: string; description: string;
+  hero: string; heroPosition?: string; heroBleed?: boolean; splitHero?: boolean; editorialGallery?: boolean; detail: string; gallery: GalleryItem[]; prompt: string;
+};
+
+export function ServicePage({ eyebrow, title, italic, description, hero, heroPosition = "center", heroBleed = false, splitHero = false, editorialGallery = false, detail, gallery, prompt }: Props) {
   return (
     <>
       <Header />
@@ -40,9 +45,32 @@ export function ServicePage({ eyebrow, title, italic, description, hero, heroPos
             <div><p className="lead">{detail}</p><p>I’ll tell you where to stand, keep everyone moving, and make the experience feel easy. You’ll receive both beautifully posed portraits and candid moments full of real personality—plus help choosing a Bay Area location and outfits that photograph well.</p><Link className="text-link" href="/pricing">View pricing <span>→</span></Link></div>
           </div>
         </section>
-        <section className="gallery-strip">
-          {gallery.map((image, i) => <div key={image} className={`gallery-image image-${i + 1}`} style={{ backgroundImage: `url("${image}")` }} />)}
-        </section>
+        {editorialGallery ? (
+          <section className="editorial-gallery" aria-labelledby="families-gallery-heading">
+            <div className="editorial-gallery-heading">
+              <p className="eyebrow">Selected family photographs</p>
+              <h2 id="families-gallery-heading">Families,<br /><em>beautifully real.</em></h2>
+            </div>
+            <div className="editorial-gallery-grid">
+              {gallery.map((image, i) => {
+                const src = typeof image === "string" ? image : image.src;
+                const alt = typeof image === "string" ? `Joyful California family photograph ${i + 1}` : image.alt;
+                return (
+                  <figure className={`editorial-gallery-image editorial-gallery-image-${i + 1}`} key={src}>
+                    <Image src={src} alt={alt} fill sizes={i === 0 ? "100vw" : "(max-width: 760px) 100vw, 34vw"} />
+                  </figure>
+                );
+              })}
+            </div>
+          </section>
+        ) : (
+          <section className="gallery-strip">
+            {gallery.map((image, i) => {
+              const src = typeof image === "string" ? image : image.src;
+              return <div key={src} className={`gallery-image image-${i + 1}`} style={{ backgroundImage: `url("${src}")` }} />;
+            })}
+          </section>
+        )}
         <section className="experience-steps">
           <p className="eyebrow">A gentle, thoughtful process</p>
           <h2>From hello to<br /><em>heirloom.</em></h2>

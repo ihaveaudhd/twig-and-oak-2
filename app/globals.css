@@ -140,6 +140,18 @@ h1 em { font-family: var(--font-hand); font-size: 1.05em; font-weight: 400; }
 .gallery-strip { width: var(--page); margin: 0 auto; padding-bottom: var(--section-space); display: grid; grid-template-columns: .9fr 1.2fr .9fr; gap: 18px; align-items: center; }
 .gallery-image { aspect-ratio: .78; background-position: center; background-size: cover; }
 .image-2 { aspect-ratio: .7; }
+.editorial-gallery { padding: 110px max(48px, calc((100vw - 1400px) / 2)) var(--section-space); background: var(--white); }
+.editorial-gallery-heading { max-width: 620px; margin: 0 auto 72px; text-align: center; }
+.editorial-gallery-heading h2 { margin: 20px 0 0; font-size: clamp(48px, 6vw, 88px); line-height: 1.04; }
+.editorial-gallery-heading h2 em { font-style: italic; }
+.editorial-gallery-grid { columns: 3; column-gap: 18px; }
+.editorial-gallery-image { position: relative; width: 100%; margin: 0 0 18px; break-inside: avoid; overflow: hidden; }
+.editorial-gallery-image img { object-fit: cover; transition: transform .55s var(--ease); }
+.editorial-gallery-image:hover img { transform: scale(1.025); }
+.editorial-gallery-image:nth-child(3n + 1) { aspect-ratio: 1.35; }
+.editorial-gallery-image:nth-child(3n + 2) { aspect-ratio: .78; }
+.editorial-gallery-image:nth-child(3n) { aspect-ratio: 1; }
+.editorial-gallery-image:first-child { aspect-ratio: 1.5; }
 .experience-steps { padding: var(--section-space) max(48px, calc((100vw - 1400px) / 2)); background: #f4efe8; }
 .steps { display: grid; grid-template-columns: repeat(3, 1fr); gap: 60px; margin-top: 65px; }
 .steps > div { padding-top: 22px; border-top: 1px solid var(--blue); }
@@ -256,6 +268,10 @@ h1 em { font-family: var(--font-hand); font-size: 1.05em; font-weight: 400; }
   .editorial-grid, .pricing-note { grid-template-columns: 1fr; gap: 40px; }
   .gallery-strip { grid-template-columns: 1fr; }
   .gallery-image, .image-2 { aspect-ratio: .9; }
+  .editorial-gallery { padding: 76px 22px 90px; }
+  .editorial-gallery-heading { margin-bottom: 48px; }
+  .editorial-gallery-grid { columns: 1; column-gap: 0; }
+  .editorial-gallery-image { margin-bottom: 12px; }
   .experience-steps { padding-inline: 23px; }
   .steps, .pricing-list { grid-template-columns: 1fr; gap: 24px; }
   .pricing-list { width: calc(100vw - 44px); }
