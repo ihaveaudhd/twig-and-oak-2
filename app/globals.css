@@ -181,11 +181,15 @@ h1 em { font-family: var(--font-hand); font-size: 1.05em; font-weight: 400; }
 .price-card ul { padding: 10px 0 25px; list-style: none; font-size: 12px; line-height: 2.1; }
 .price-card li::before { content: "—"; margin-right: 10px; color: var(--gold); }
 .pricing-note { padding: var(--section-space) max(48px, calc((100vw - 1400px) / 2)); display: grid; grid-template-columns: 1fr 1fr; gap: 10vw; align-items: center; background: var(--navy); color: var(--white); }
-.families-page .pricing-hero h1,
-.families-page .editorial-gallery-heading h2,
-.families-page .editorial h2,
-.families-page .experience-steps h2,
-.families-page .cta-section h2 {
+.pricing-hero h1,
+.inner-hero-copy h1,
+.about-page h1,
+.editorial-gallery-heading h2,
+.editorial h2,
+.experience-steps h2,
+.pricing-note h2,
+.price-card h2,
+.cta-section h2 {
   color: #34465d;
   font-family: var(--font-serif);
   font-size: clamp(44px, 3.8vw, 58px);
@@ -193,7 +197,9 @@ h1 em { font-family: var(--font-hand); font-size: 1.05em; font-weight: 400; }
   line-height: 1.04;
   letter-spacing: -.025em;
 }
-.families-page .editorial--dark h2 { color: var(--white); }
+.inner-hero-copy h1,
+.editorial--dark h2,
+.pricing-note h2 { color: var(--white); }
 .about-page { padding-top: 220px; }
 .about-portrait { position: relative; min-height: 690px; overflow: hidden; }
 .about-portrait img { object-fit: cover; object-position: 50% 30%; }
@@ -299,7 +305,7 @@ h1 em { font-family: var(--font-hand); font-size: 1.05em; font-weight: 400; }
   .pricing-hero-media { width: 100%; min-height: 66.67vw; }
   .pricing-hero-image { object-position: center; }
   .pricing-hero-copy { width: 100%; padding: 70px 23px 76px; }
-  .pricing-hero h1 { font-size: clamp(48px, 14vw, 62px); }
+  .pricing-hero h1 { font-size: clamp(44px, 3.8vw, 58px); }
   .pricing-note { padding-inline: 23px; }
   .about-page { padding-top: 140px; }
   .about-portrait { min-height: 125vw; }
