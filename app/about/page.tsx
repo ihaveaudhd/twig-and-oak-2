@@ -12,7 +12,7 @@ export default function AboutPage() {
         <section className="editorial about-page">
           <div className="editorial-grid">
             <div className="about-portrait">
-              <Image src="/seniors-home.jpg" alt="Amy, founder and photographer at Twig and Oak" fill priority sizes="(max-width: 760px) 100vw, 48vw" />
+              <Image src="/amy-headshot.jpg" alt="Amy, founder and photographer at Twig and Oak, standing in the California hills" fill priority sizes="(max-width: 760px) 100vw, 48vw" />
             </div>
             <div>
               <p className="eyebrow">Meet your photographer</p>

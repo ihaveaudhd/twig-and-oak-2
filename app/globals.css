@@ -162,7 +162,7 @@ h1 em { font-family: var(--font-hand); font-size: 1.05em; font-weight: 400; }
 .about-page { padding-top: 220px; }
 .about-portrait { position: relative; min-height: 690px; overflow: hidden; }
 .about-portrait img { object-fit: cover; object-position: 50% 30%; }
-.about-page .editorial-grid { align-items: center; }
+.about-page .editorial-grid { align-items: center; gap: clamp(36px, 4vw, 64px); }
 .about-page .button { margin-top: 22px; }
 .style-guide { padding-top: 108px; }
 .style-intro, .style-section { width: var(--page); margin: auto; padding: 100px 0; border-bottom: 1px solid var(--gray); }
