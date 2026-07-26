@@ -39,14 +39,7 @@ export function ServicePage({ eyebrow, title, italic, description, hero, heroPos
             </div>
           </section>
         )}
-        <section className="editorial">
-          <p className="eyebrow">The heart of it</p>
-          <div className="editorial-grid">
-            <h2>Nothing stiff.<br />Nothing forced.<br /><em>Just you.</em></h2>
-            <div><p className="lead">{detail}</p><p>I’ll tell you where to stand, keep everyone moving, and make the experience feel easy. You’ll receive both beautifully posed portraits and candid moments full of real personality—plus help choosing a Bay Area location and outfits that photograph well.</p><Link className="text-link" href="/pricing">View pricing <span>→</span></Link></div>
-          </div>
-        </section>
-        {editorialGallery ? (
+        {editorialGallery && (
           <section className="editorial-gallery" aria-labelledby="families-gallery-heading">
             <div className="editorial-gallery-heading">
               <p className="eyebrow">Selected family photographs</p>
@@ -54,7 +47,15 @@ export function ServicePage({ eyebrow, title, italic, description, hero, heroPos
             </div>
             <EditorialCarousel images={gallery.map((image, i) => typeof image === "string" ? { src: image, alt: `Joyful California family photograph ${i + 1}` } : image)} />
           </section>
-        ) : (
+        )}
+        <section className="editorial">
+          <p className="eyebrow">The heart of it</p>
+          <div className="editorial-grid">
+            <h2>Nothing stiff.<br />Nothing forced.<br /><em>Just you.</em></h2>
+            <div><p className="lead">{detail}</p><p>I’ll tell you where to stand, keep everyone moving, and make the experience feel easy. You’ll receive both beautifully posed portraits and candid moments full of real personality—plus help choosing a Bay Area location and outfits that photograph well.</p><Link className="text-link" href="/pricing">View pricing <span>→</span></Link></div>
+          </div>
+        </section>
+        {!editorialGallery && (
           <section className="gallery-strip">
             {gallery.map((image, i) => {
               const src = typeof image === "string" ? image : image.src;
