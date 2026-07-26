@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import { EditorialCarousel } from "./editorial-carousel";
 import { Footer, Header } from "./site-components";
 
 type GalleryItem = string | {
@@ -51,17 +52,7 @@ export function ServicePage({ eyebrow, title, italic, description, hero, heroPos
               <p className="eyebrow">Selected family photographs</p>
               <h2 id="families-gallery-heading">Families,<br /><em>beautifully real.</em></h2>
             </div>
-            <div className="editorial-gallery-grid">
-              {gallery.map((image, i) => {
-                const src = typeof image === "string" ? image : image.src;
-                const alt = typeof image === "string" ? `Joyful California family photograph ${i + 1}` : image.alt;
-                return (
-                  <figure className={`editorial-gallery-image editorial-gallery-image-${i + 1}`} key={src}>
-                    <Image src={src} alt={alt} fill sizes={i === 0 ? "100vw" : "(max-width: 760px) 100vw, 34vw"} />
-                  </figure>
-                );
-              })}
-            </div>
+            <EditorialCarousel images={gallery.map((image, i) => typeof image === "string" ? { src: image, alt: `Joyful California family photograph ${i + 1}` } : image)} />
           </section>
         ) : (
           <section className="gallery-strip">
