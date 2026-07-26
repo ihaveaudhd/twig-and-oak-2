@@ -18,7 +18,7 @@ export function ServicePage({ eyebrow, title, italic, description, hero, heroPos
     <>
       <Header />
       <main className={editorialGallery ? "families-page" : undefined}>
-        {splitHero ? (
+        {!editorialGallery && (splitHero ? (
           <section className="pricing-hero">
             <div className="pricing-hero-copy">
               <p className="eyebrow">{eyebrow}</p>
@@ -38,12 +38,13 @@ export function ServicePage({ eyebrow, title, italic, description, hero, heroPos
               <p>{description}</p>
             </div>
           </section>
-        )}
+        ))}
         {editorialGallery && (
           <section className="editorial-gallery" aria-labelledby="families-gallery-heading">
             <div className="editorial-gallery-heading">
-              <p className="eyebrow">Selected family photographs</p>
+              <p className="eyebrow">{eyebrow}</p>
               <h2 id="families-gallery-heading">Families,<br /><em>beautifully real.</em></h2>
+              <p className="editorial-gallery-quote">Your people. Exactly as they are.</p>
             </div>
             <EditorialCarousel images={gallery.map((image, i) => typeof image === "string" ? { src: image, alt: `Joyful California family photograph ${i + 1}` } : image)} />
           </section>

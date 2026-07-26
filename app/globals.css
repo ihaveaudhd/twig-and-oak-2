@@ -148,6 +148,7 @@ h1 em { font-family: var(--font-hand); font-size: 1.05em; font-weight: 400; }
 .editorial-gallery-heading { max-width: 620px; margin: 0 auto 72px; text-align: center; }
 .editorial-gallery-heading h2 { margin: 20px 0 0; font-size: clamp(48px, 6vw, 88px); line-height: 1.04; }
 .editorial-gallery-heading h2 em { font-style: italic; }
+.editorial-gallery-quote { margin: 24px 0 0; font-family: var(--font-serif); font-size: clamp(20px, 2vw, 27px); font-style: italic; line-height: 1.4; color: var(--navy); }
 .editorial-carousel { position: relative; max-width: 1280px; margin: 0 auto; }
 .editorial-carousel-track { display: flex; overflow-x: auto; scroll-snap-type: x mandatory; scrollbar-width: none; overscroll-behavior-x: contain; }
 .editorial-carousel-track::-webkit-scrollbar { display: none; }
