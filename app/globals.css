@@ -151,6 +151,7 @@ h1 em { font-family: var(--font-hand); font-size: 1.05em; font-weight: 400; }
 .button-dark { color: var(--white); background: var(--navy); }
 .pricing-hero { min-height: 790px; padding-top: 148px; display: grid; grid-template-columns: 1fr 1fr; background: #f4efe8; }
 .pricing-hero-media { position: relative; min-height: 642px; }
+.service-split-hero .pricing-hero-media { overflow: hidden; border-radius: 10px; }
 .pricing-hero-image { object-fit: cover; object-position: center; }
 .pricing-hero-copy { width: min(86%, 680px); margin: auto; padding: 72px 30px; text-align: center; }
 .pricing-hero h1 { font-size: clamp(52px, 5.6vw, 86px); }
