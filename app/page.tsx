@@ -32,7 +32,7 @@ export default function Home() {
           <div className="hero-copy">
             <p className="eyebrow">Joyful. Timeless. Real.</p>
             <span className="gold-rule" />
-            <h1>Photos that<br />feel like<br /><em>your family.</em></h1>
+            <h1>Photos that<br />feel like<br /><em>your</em> family.</h1>
             <p className="hero-intro">Joyful, timeless photography for the moments you never want to forget.</p>
             <div className="button-row">
               <Link className="button primary-button" href="#galleries">View the galleries</Link>
