@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 
 const navItems = [
@@ -24,6 +25,7 @@ export function Logo() {
 export function Header() {
   const [scrolled, setScrolled] = useState(false);
   const [open, setOpen] = useState(false);
+  const pathname = usePathname();
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 24);
@@ -33,7 +35,7 @@ export function Header() {
   }, []);
 
   return (
-    <header className={`site-header${scrolled ? " is-scrolled" : ""}`}>
+    <header className={`site-header${pathname === "/families" ? " families-header" : ""}${scrolled ? " is-scrolled" : ""}`}>
       <Link className="brand" href="/" aria-label="Twig and Oak Photography home"><Logo /></Link>
       <nav className="desktop-nav" aria-label="Main navigation">
         {navItems.map(([label, href]) => <Link href={href} key={label}>{label}</Link>)}

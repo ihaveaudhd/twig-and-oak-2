@@ -31,6 +31,7 @@ button { color: inherit; }
   transition: height .35s var(--ease), padding .35s var(--ease), box-shadow .35s var(--ease), background .35s var(--ease);
 }
 .site-header.is-scrolled { height: 80px; padding-top: 0; background: rgba(251,248,243,.98); box-shadow: 0 1px 0 rgba(39,54,75,.12); backdrop-filter: blur(12px); }
+.site-header.families-header { background: var(--ivory); box-shadow: 0 1px 0 rgba(39,54,75,.08); }
 .brand { justify-self: start; }
 .logo-lockup { display: flex; width: max-content; flex-direction: column; align-items: center; line-height: 1; }
 .logo-lockup > span { font: 500 41px/1 var(--font-serif); letter-spacing: .015em; text-transform: lowercase; }
@@ -117,7 +118,8 @@ h1 em { font-family: var(--font-hand); font-size: 1.05em; font-weight: 400; }
 .inner-hero::after { content: ""; position: absolute; inset: 148px 0 0; background: linear-gradient(0deg, rgba(39,54,75,.7), transparent 65%); }
 .inner-hero--bleed { padding-top: 0; }
 .inner-hero--bleed .inner-hero-image, .inner-hero--bleed::after { inset: 0; }
-.inner-hero--bleed::after { background: linear-gradient(180deg, rgba(251,248,243,.72) 0%, rgba(251,248,243,.28) 13%, transparent 25%), linear-gradient(0deg, rgba(39,54,75,.7) 0%, transparent 65%); }
+.inner-hero--bleed::after { background: linear-gradient(0deg, rgba(39,54,75,.7) 0%, transparent 65%); }
+.inner-hero--bleed .inner-hero-copy, .inner-hero--bleed .light { color: var(--ivory); }
 .inner-hero-copy { position: relative; z-index: 1; padding: 80px max(48px, calc((100vw - 1400px) / 2)); }
 .inner-hero-copy h1 { font-size: clamp(58px, 7vw, 104px); }
 .inner-hero-copy h1 em { font-family: var(--font-serif); font-style: italic; }
