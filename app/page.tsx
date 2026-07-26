@@ -41,7 +41,7 @@ export default function Home() {
             <p className="handwritten">Yes, wild kids and<br />reluctant dads are welcome. <span>♡</span></p>
           </div>
           <div className="hero-photo">
-            <Image src="/home-hero-krueger-expanded.jpg" alt="A family walking together through golden California hills at sunset" fill priority sizes="100vw" />
+            <Image src="/home-hero-krueger-expanded-2.jpg" alt="A family walking together through golden California hills at sunset" fill priority sizes="100vw" />
           </div>
         </section>
 
