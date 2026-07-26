@@ -17,7 +17,7 @@ export function ServicePage({ eyebrow, title, italic, description, hero, heroPos
   return (
     <>
       <Header />
-      <main>
+      <main className={editorialGallery ? "families-page" : undefined}>
         {splitHero ? (
           <section className="pricing-hero">
             <div className="pricing-hero-copy">
