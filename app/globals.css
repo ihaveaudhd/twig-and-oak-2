@@ -46,7 +46,7 @@ button { color: inherit; }
 
 .home-hero { min-height: 1030px; position: relative; overflow: hidden; }
 .home-hero::after { content: ""; position: absolute; z-index: 0; inset: 0; pointer-events: none; background: linear-gradient(180deg, rgba(251,248,243,.78) 0%, rgba(251,248,243,.42) 8%, transparent 19%); }
-.hero-copy { position: relative; z-index: 1; top: 190px; width: min(470px, calc(100vw - 96px)); margin-left: max(48px, calc((100vw - 1400px) / 2)); padding: 40px clamp(34px, 3vw, 40px) 44px; display: flex; flex-direction: column; align-items: flex-start; color: #13243a; background: var(--ivory); border-radius: 10px; }
+.hero-copy { position: relative; z-index: 1; top: 230px; width: min(470px, calc(100vw - 96px)); margin-left: max(48px, calc((100vw - 1400px) / 2)); padding: 40px clamp(34px, 3vw, 40px) 44px; display: flex; flex-direction: column; align-items: flex-start; color: #13243a; background: var(--ivory); border-radius: 10px; box-shadow: 0 0 24px 10px rgba(251,248,243,.2); }
 .hero-copy .eyebrow { margin-left: 2px; }
 .hero-copy h1 { color: #34465d; font-size: clamp(44px, 3.8vw, 58px); font-weight: 400; line-height: 1.04; letter-spacing: -.025em; }
 .hero-copy h1 em { font-family: var(--font-serif); font-size: 1em; font-style: italic; font-weight: 400; }
