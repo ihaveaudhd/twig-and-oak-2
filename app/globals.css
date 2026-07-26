@@ -144,7 +144,7 @@ h1 em { font-family: var(--font-hand); font-size: 1.05em; font-weight: 400; }
 .gallery-strip { width: var(--page); margin: 0 auto; padding-bottom: var(--section-space); display: grid; grid-template-columns: .9fr 1.2fr .9fr; gap: 18px; align-items: center; }
 .gallery-image { aspect-ratio: .78; background-position: center; background-size: cover; }
 .image-2 { aspect-ratio: .7; }
-.editorial-gallery { padding: 176px max(48px, calc((100vw - 1400px) / 2)) var(--section-space); background: var(--ivory); }
+.editorial-gallery { padding: 176px max(48px, calc((100vw - 1400px) / 2)) var(--section-space); background: #f4efe8; }
 .editorial-gallery-heading { max-width: 620px; margin: 0 auto 72px; text-align: center; }
 .editorial-gallery-heading h2 { margin: 20px 0 0; font-size: clamp(48px, 6vw, 88px); line-height: 1.04; }
 .editorial-gallery-heading h2 em { font-style: italic; }
