@@ -159,6 +159,37 @@ h1 em { font-family: var(--font-hand); font-size: 1.05em; font-weight: 400; }
 .editorial-carousel-arrow:focus-visible { outline: 3px solid var(--gold); outline-offset: 3px; }
 .editorial-carousel-arrow--previous { left: 22px; }
 .editorial-carousel-arrow--next { right: 22px; }
+.full-session-previews { padding: var(--section-space) max(48px, calc((100vw - 1400px) / 2)); background: var(--ivory); }
+.full-session-intro { max-width: 760px; margin-bottom: 110px; }
+.full-session-intro h2 { margin: 22px 0 30px; color: #34465d; font: 400 clamp(44px, 5vw, 72px)/1.04 var(--font-serif); letter-spacing: -.025em; }
+.full-session-intro h2 em { font-style: italic; }
+.full-session-intro > p:last-child { max-width: 620px; font-size: 17px; line-height: 1.8; }
+.full-session-list { display: grid; gap: 140px; }
+.full-session-preview { display: grid; grid-template-columns: minmax(0, 1.45fr) minmax(300px, .75fr); gap: clamp(60px, 8vw, 130px); align-items: center; }
+.full-session-preview:nth-child(even) { grid-template-columns: minmax(300px, .75fr) minmax(0, 1.45fr); }
+.full-session-preview:nth-child(even) .full-session-cover { grid-column: 2; }
+.full-session-preview:nth-child(even) .full-session-copy { grid-column: 1; grid-row: 1; }
+.full-session-cover { position: relative; display: block; min-height: clamp(440px, 50vw, 720px); overflow: hidden; }
+.full-session-cover img { object-fit: cover; transition: transform .5s var(--ease); }
+.full-session-cover:hover img { transform: scale(1.025); }
+.full-session-copy { max-width: 440px; }
+.full-session-copy h3 { margin: 20px 0 22px; color: #34465d; font: 400 clamp(38px, 4vw, 58px)/1.08 var(--font-serif); letter-spacing: -.02em; }
+.full-session-copy > p:not(.eyebrow) { font-size: 16px; line-height: 1.8; }
+.full-session-copy .button { margin-top: 28px; }
+.family-session-page { padding-top: 188px; background: var(--ivory); }
+.family-session-header { width: min(780px, calc(100% - 48px)); margin: 0 auto 90px; text-align: center; }
+.family-session-header h1 { margin: 25px 0 28px; color: #34465d; font: 400 clamp(52px, 7vw, 96px)/1.02 var(--font-serif); letter-spacing: -.03em; }
+.family-session-header > p:last-child { max-width: 620px; margin-inline: auto; font-size: 17px; line-height: 1.8; }
+.family-session-gallery { width: min(1400px, calc(100% - 96px)); margin: 0 auto; display: grid; gap: 34px; }
+.family-session-image { position: relative; min-height: min(78vw, 900px); margin: 0; overflow: hidden; }
+.family-session-image img { object-fit: contain; }
+.family-session-image--1 { width: min(78%, 920px); min-height: min(86vw, 980px); margin-left: auto; }
+.family-session-image--2 { width: min(88%, 1120px); margin-right: auto; }
+.family-session-cta { padding: var(--section-space) 24px; text-align: center; }
+.family-session-cta h2 { margin: 20px 0 34px; color: #34465d; font: 400 clamp(44px, 5vw, 68px)/1.04 var(--font-serif); }
+.family-session-cta h2 em { font-style: italic; }
+.family-session-actions { display: flex; flex-direction: column; align-items: center; }
+.family-session-actions .text-link { margin-top: 28px; }
 .experience-steps { padding: var(--section-space) max(48px, calc((100vw - 1400px) / 2)); background: #f4efe8; }
 .steps { display: grid; grid-template-columns: repeat(3, 1fr); gap: 60px; margin-top: 65px; }
 .steps > div { padding-top: 22px; border-top: 1px solid var(--blue); }
@@ -321,6 +352,20 @@ h1 em { font-family: var(--font-hand); font-size: 1.05em; font-weight: 400; }
   .editorial-carousel-arrow { width: 46px; height: 46px; font-size: 25px; }
   .editorial-carousel-arrow--previous { left: 10px; }
   .editorial-carousel-arrow--next { right: 10px; }
+  .full-session-previews { padding: 82px 22px 100px; }
+  .full-session-intro { margin-bottom: 70px; }
+  .full-session-list { gap: 92px; }
+  .full-session-preview, .full-session-preview:nth-child(even) { grid-template-columns: 1fr; gap: 34px; }
+  .full-session-preview:nth-child(even) .full-session-cover,
+  .full-session-preview:nth-child(even) .full-session-copy { grid-column: 1; grid-row: auto; }
+  .full-session-cover { min-height: 112vw; }
+  .full-session-copy { max-width: none; }
+  .family-session-page { padding-top: 140px; }
+  .family-session-header { margin-bottom: 58px; }
+  .family-session-gallery { width: calc(100% - 36px); gap: 20px; }
+  .family-session-image,
+  .family-session-image--1,
+  .family-session-image--2 { width: 100%; min-height: 120vw; margin: 0; }
   .experience-steps { padding-inline: 23px; }
   .steps, .pricing-list { grid-template-columns: 1fr; gap: 24px; }
   .pricing-list { width: calc(100vw - 44px); }

@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { EditorialCarousel } from "./editorial-carousel";
+import { FullSessionPreviews } from "./families/full-session-previews";
 import { Footer, Header } from "./site-components";
 
 type GalleryItem = string | {
@@ -49,6 +50,7 @@ export function ServicePage({ eyebrow, title, italic, description, hero, heroPos
             <EditorialCarousel images={gallery.map((image, i) => typeof image === "string" ? { src: image, alt: `Joyful California family photograph ${i + 1}` } : image)} />
           </section>
         )}
+        {editorialGallery && <FullSessionPreviews />}
         <section className={`editorial${editorialGallery ? " editorial--dark" : ""}`}>
           <p className="eyebrow">The heart of it</p>
           <div className="editorial-grid">
