@@ -165,6 +165,9 @@ h1 em { font-family: var(--font-hand); font-size: 1.05em; font-weight: 400; }
 .steps span, .service-number { font-size: 9px; letter-spacing: .15em; }
 .steps h3 { margin: 22px 0 8px; font-size: 34px; }
 .steps p { font-size: 12px; }
+.families-page .editorial > .eyebrow { font-size: 15px; }
+.families-page .editorial .text-link { font-size: 13px; }
+.families-page .experience-steps .steps p { font-size: 15px; line-height: 1.8; }
 .cta-section { padding: var(--section-space) 24px; text-align: center; background: var(--ivory); }
 .cta-section .button { margin-top: 34px; }
 .button-dark { color: var(--white); background: var(--navy); }

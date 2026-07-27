@@ -15,9 +15,15 @@ const shorterSessionFeatures = [
   ...packageFeatures.slice(1),
 ];
 
+const newbornSessionFeatures = [
+  ...shorterSessionFeatures.slice(0, 2),
+  "Wardrobe guidance for your family and your newborn",
+  ...shorterSessionFeatures.slice(3),
+];
+
 const packages = [
   { name: "Family", price: "975", note: "One-hour outdoor session", features: packageFeatures },
-  { name: "Newborn", price: "1,050", note: "Two-to-three-hour session", features: shorterSessionFeatures },
+  { name: "Newborn", price: "1,050", note: "Two-to-three-hour session", features: newbornSessionFeatures },
   { name: "Maternity", price: "975", note: "One-hour outdoor session", features: shorterSessionFeatures },
   { name: "Senior", price: "800", note: "One-hour senior session", features: shorterSessionFeatures },
 ];
