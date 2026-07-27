@@ -13,7 +13,7 @@ export type FamilySession = {
 export const familySessions: FamilySession[] = [
   {
     slug: "graham-family-walnut-creek",
-    title: "The Graham Family",
+    title: "The Wark Family",
     location: "Walnut Creek · Golden hour",
     description: "A playful evening beneath the oak trees, filled with movement, laughter, and the kind of moments children make entirely their own.",
     cover: "/walnut-creek-family-photography-graham-dad-daughter.jpg",
