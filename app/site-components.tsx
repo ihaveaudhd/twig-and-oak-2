@@ -17,9 +17,9 @@ export function Logo() {
   return (
     <span className="logo-lockup">
       <span className="logo-name">
-        <span>Twig</span>
+        <span className="logo-word">Twig</span>
         <span className="logo-ampersand">&amp;</span>
-        <span>Oak</span>
+        <span className="logo-word">Oak</span>
       </span>
       <small>Photography</small>
     </span>

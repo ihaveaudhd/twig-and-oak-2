@@ -33,9 +33,10 @@ button { color: inherit; }
 .site-header.is-scrolled { height: 80px; padding-top: 0; background: rgba(251,248,243,.98); box-shadow: 0 1px 0 rgba(39,54,75,.12); backdrop-filter: blur(12px); }
 .site-header.families-header { background: #f4efe8; box-shadow: none; }
 .brand { justify-self: start; }
-.logo-lockup { display: flex; width: max-content; flex-direction: column; align-items: center; color: #1f3047; line-height: 1; }
-.logo-name { display: flex; align-items: baseline; column-gap: .34em; font: 400 36px/1 var(--font-logo), Georgia, serif; letter-spacing: .075em; text-transform: uppercase; -webkit-text-stroke: .18px currentColor; }
-.logo-ampersand { font-family: var(--font-logo-ampersand), Georgia, serif; font-size: .864em; font-style: italic; letter-spacing: 0; text-transform: none; }
+.logo-lockup { display: flex; width: max-content; flex-direction: column; align-items: center; color: #42536a; line-height: 1; }
+.logo-name { display: flex; align-items: baseline; column-gap: .34em; font: 400 36px/1 var(--font-logo), Georgia, serif; letter-spacing: .075em; text-transform: uppercase; }
+.logo-word { -webkit-text-stroke: .38px currentColor; }
+.logo-ampersand { margin-right: .12em; font-family: var(--font-logo-ampersand), Georgia, serif; font-size: .864em; font-style: italic; letter-spacing: 0; text-transform: none; }
 .logo-lockup small { margin-top: 9px; font: 500 11px/1 var(--font-logo-label), Arial, sans-serif; letter-spacing: .45em; text-transform: uppercase; padding-left: .45em; }
 .desktop-nav { display: flex; align-items: center; gap: clamp(20px, 2.4vw, 38px); }
 .desktop-nav a { font-size: 14px; font-weight: 500; letter-spacing: .13em; text-transform: uppercase; transition: color .3s; }
