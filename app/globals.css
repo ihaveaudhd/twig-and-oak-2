@@ -175,14 +175,14 @@ h1 em { font-family: var(--font-hand); font-size: 1.05em; font-weight: 400; }
 .pricing-hero h1 { font-size: clamp(52px, 5.6vw, 86px); }
 .pricing-hero h1 em { font-family: var(--font-serif); font-style: italic; }
 .pricing-hero-copy > p:last-child { max-width: 620px; margin: 30px auto 0; }
-.pricing-list { width: var(--page); margin: auto; padding: 90px 0; display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+.pricing-list { width: var(--page); margin: auto; padding: 90px 0; display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; }
 .price-card { padding: 42px 35px; background: var(--white); border-top: 3px solid var(--blue); }
 .price-card h2 { margin: 12px 0; font-size: 46px; }
 .price { padding-bottom: 20px; border-bottom: 1px solid var(--gray); }
 .price strong { margin-left: 10px; font: 400 34px var(--font-serif); }
 .price-card ul { padding: 14px 0 27px; list-style: none; font-size: 15px; line-height: 1.7; }
 .price-card li { position: relative; padding: 5px 0 5px 24px; }
-.price-card li::before { content: "—"; position: absolute; left: 0; color: var(--gold); font-size: 18px; font-weight: 700; line-height: 1.35; }
+.price-card li::before { content: "•"; position: absolute; left: 2px; color: var(--gold); font-size: 22px; font-weight: 700; line-height: 1.1; }
 .pricing-note { padding: var(--section-space) max(48px, calc((100vw - 1400px) / 2)); display: grid; grid-template-columns: 1fr 1fr; gap: 10vw; align-items: center; background: var(--navy); color: var(--white); }
 .pricing-hero h1,
 .inner-hero-copy h1,
@@ -235,6 +235,7 @@ h1 em { font-family: var(--font-hand); font-size: 1.05em; font-weight: 400; }
 @media (max-width: 1050px) {
   .site-header { padding-inline: 32px; }
   .desktop-nav { gap: 17px; }
+  .pricing-list { grid-template-columns: repeat(2, 1fr); }
   .hero-copy { width: min(440px, calc(100vw - 64px)); margin-left: 32px; padding-left: 40px; padding-right: 38px; }
   .category-grid { width: 100%; margin: -60px auto 24px; grid-template-columns: repeat(2, 1fr); }
   .category-copy { min-height: 225px; }
