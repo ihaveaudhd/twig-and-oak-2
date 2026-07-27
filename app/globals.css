@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@400;600&family=Cormorant+Garamond:ital,wght@0,400;1,400&family=DM+Sans:wght@400&family=Italiana&family=Lato:wght@300;400;700&family=Newsreader:ital,opsz,wght@1,6..72,400&family=Playfair+Display:ital,wght@0,400;1,400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@400;600&family=Cormorant+Garamond:ital,wght@0,400;1,400&family=Lato:wght@300;400;700&family=Playfair+Display:ital,wght@0,400;1,400&display=swap");
 
 :root {
   --ivory: #fbf8f3;
@@ -34,9 +34,9 @@ button { color: inherit; }
 .site-header.families-header { background: #f4efe8; box-shadow: none; }
 .brand { justify-self: start; }
 .logo-lockup { display: flex; width: max-content; flex-direction: column; align-items: center; color: #34465d; line-height: 1; }
-.logo-name { display: flex; align-items: baseline; gap: .2em; font: 400 36px/1 "Italiana", Georgia, serif; letter-spacing: .075em; text-transform: uppercase; }
-.logo-ampersand { font-family: "Newsreader", Georgia, serif; font-size: 1.08em; font-style: italic; letter-spacing: 0; text-transform: none; }
-.logo-lockup small { margin-top: 13px; font: 400 11px/1 "DM Sans", Arial, sans-serif; letter-spacing: .45em; text-transform: uppercase; padding-left: .45em; }
+.logo-name { display: flex; align-items: baseline; gap: .2em; font: 400 36px/1 var(--font-logo), Georgia, serif; letter-spacing: .075em; text-transform: uppercase; }
+.logo-ampersand { font-family: var(--font-logo-ampersand), Georgia, serif; font-size: 1.08em; font-style: italic; letter-spacing: 0; text-transform: none; }
+.logo-lockup small { margin-top: 13px; font: 400 11px/1 var(--font-logo-label), Arial, sans-serif; letter-spacing: .45em; text-transform: uppercase; padding-left: .45em; }
 .desktop-nav { display: flex; align-items: center; gap: clamp(20px, 2.4vw, 38px); }
 .desktop-nav a { font-size: 14px; font-weight: 500; letter-spacing: .13em; text-transform: uppercase; transition: color .3s; }
 .site-footer nav a, .social-links a { font-size: 10px; font-weight: 400; letter-spacing: .13em; text-transform: uppercase; transition: color .3s; }
