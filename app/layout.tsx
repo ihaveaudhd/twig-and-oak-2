@@ -4,7 +4,7 @@ import "./globals.css";
 
 const italiana = Italiana({ weight: "400", subsets: ["latin"], variable: "--font-logo" });
 const newsreader = Newsreader({ weight: "400", style: "italic", subsets: ["latin"], variable: "--font-logo-ampersand" });
-const dmSans = DM_Sans({ weight: "400", subsets: ["latin"], variable: "--font-logo-label" });
+const dmSans = DM_Sans({ weight: ["400", "500"], subsets: ["latin"], variable: "--font-logo-label" });
 
 export const metadata: Metadata = {
   title: { default: "Twig & Oak Photography", template: "%s | Twig & Oak Photography" },
