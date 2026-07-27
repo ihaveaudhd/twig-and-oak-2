@@ -10,11 +10,16 @@ const packageFeatures = [
   "Professional prints, albums, and framed artwork available for purchase",
 ];
 
+const shorterSessionFeatures = [
+  "Approximately 40–60 professionally edited images",
+  ...packageFeatures.slice(1),
+];
+
 const packages = [
   { name: "Family", price: "975", note: "One-hour outdoor session", features: packageFeatures },
-  { name: "Newborn", price: "1,050", note: "Two-to-three-hour session", features: packageFeatures },
-  { name: "Maternity", price: "975", note: "One-hour outdoor session", features: packageFeatures },
-  { name: "Senior", price: "800", note: "One-hour senior session", features: packageFeatures },
+  { name: "Newborn", price: "1,050", note: "Two-to-three-hour session", features: shorterSessionFeatures },
+  { name: "Maternity", price: "975", note: "One-hour outdoor session", features: shorterSessionFeatures },
+  { name: "Senior", price: "800", note: "One-hour senior session", features: shorterSessionFeatures },
 ];
 
 export default function Pricing() {
