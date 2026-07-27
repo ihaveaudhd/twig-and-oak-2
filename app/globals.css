@@ -167,7 +167,7 @@ h1 em { font-family: var(--font-hand); font-size: 1.05em; font-weight: 400; }
 .steps p { font-size: 12px; }
 .families-page .editorial > .eyebrow { font-size: 15px; }
 .families-page .editorial .text-link { font-size: 13px; }
-.families-page .experience-steps .steps p { font-size: 15px; line-height: 1.8; }
+.families-page .experience-steps .steps p { font-size: 17px; line-height: 1.75; }
 .cta-section { padding: var(--section-space) 24px; text-align: center; background: var(--ivory); }
 .cta-section .button { margin-top: 34px; }
 .button-dark { color: var(--white); background: var(--navy); }
@@ -211,6 +211,22 @@ h1 em { font-family: var(--font-hand); font-size: 1.05em; font-weight: 400; }
 .about-portrait img { object-fit: cover; object-position: 50% 30%; }
 .about-page .editorial-grid { align-items: center; gap: clamp(36px, 4vw, 64px); }
 .about-page .button { margin-top: 22px; }
+.contact-page { min-height: 100vh; padding: 220px max(48px, calc((100vw - 1200px) / 2)) 120px; background: #f4efe8; }
+.contact-layout { display: grid; grid-template-columns: .8fr 1.2fr; gap: clamp(64px, 9vw, 130px); align-items: start; }
+.contact-intro { position: sticky; top: 130px; }
+.contact-intro h1 { margin-top: 28px; color: #34465d; font-size: clamp(50px, 5.5vw, 78px); }
+.contact-intro h1 em { font-family: var(--font-serif); font-style: italic; }
+.contact-intro .lead { margin-top: 30px; }
+.contact-details { margin-top: 30px; font-size: 14px; }
+.contact-details a { padding-bottom: 2px; border-bottom: 1px solid var(--blue); }
+.contact-form { padding: clamp(34px, 5vw, 58px); background: var(--ivory); border-top: 3px solid var(--blue); }
+.form-field { margin-bottom: 26px; }
+.form-field label { display: block; margin-bottom: 9px; font-size: 11px; font-weight: 700; letter-spacing: .16em; text-transform: uppercase; }
+.form-field input, .form-field textarea { width: 100%; padding: 14px 0; color: var(--navy); background: transparent; border: 0; border-bottom: 1px solid rgba(39,54,75,.35); border-radius: 0; font: 400 17px/1.5 var(--font-sans); }
+.form-field textarea { min-height: 150px; resize: vertical; }
+.form-field input:focus, .form-field textarea:focus { outline: 0; border-bottom-color: var(--blue-dark); }
+.contact-form .button { margin-top: 8px; cursor: pointer; }
+.contact-form-note { margin: 18px 0 0; font-size: 12px; line-height: 1.6; }
 .style-guide { padding-top: 108px; }
 .style-intro, .style-section { width: var(--page); margin: auto; padding: 100px 0; border-bottom: 1px solid var(--gray); }
 .style-intro h1 { margin-top: 30px; }
@@ -316,6 +332,10 @@ h1 em { font-family: var(--font-hand); font-size: 1.05em; font-weight: 400; }
   .pricing-note { padding-inline: 23px; }
   .about-page { padding-top: 140px; }
   .about-portrait { min-height: 125vw; }
+  .contact-page { padding: 145px 22px 80px; }
+  .contact-layout { grid-template-columns: 1fr; gap: 48px; }
+  .contact-intro { position: static; }
+  .contact-form { padding: 34px 24px; }
   .style-guide { padding-top: 76px; }
   .style-intro, .style-section { padding: 70px 0; }
   .swatch-grid { grid-template-columns: repeat(2, 1fr); }

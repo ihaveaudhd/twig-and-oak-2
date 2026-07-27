@@ -20,7 +20,7 @@ export default function AboutPage() {
               <h1>Hi, I’m Amy.</h1>
               <p className="lead">A family photographer, mama to two, lifelong Bay Area local, and expert at winning over the family member who “doesn’t do photos.”</p>
               <p>For more than 20 years, I’ve photographed babies, kids, families, and all the wonderfully unpredictable personalities that come with them. I’ll guide you into natural poses, make a fool of myself when necessary, and leave space for the moments that feel most like you.</p>
-              <a className="button primary-button" href="mailto:amy@twigandoakphotography.com">Say hello</a>
+              <Link className="button primary-button" href="/contact">Say hello</Link>
             </div>
           </div>
         </section>
