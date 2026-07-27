@@ -37,7 +37,7 @@ button { color: inherit; }
 .logo-lockup > span { font: 400 41px/1 var(--font-serif); letter-spacing: .015em; text-transform: lowercase; }
 .logo-lockup small { margin-top: 12px; font: 800 10px/1 var(--font-sans); letter-spacing: .46em; text-transform: uppercase; padding-left: .46em; }
 .desktop-nav { display: flex; align-items: center; gap: clamp(20px, 2.4vw, 38px); }
-.desktop-nav a { font-size: 14px; font-weight: 500; letter-spacing: .13em; text-transform: uppercase; transition: color .3s; }
+.desktop-nav a { font-size: 14px; font-weight: 700; letter-spacing: .17em; text-transform: uppercase; transition: color .3s; }
 .site-footer nav a, .social-links a { font-size: 10px; font-weight: 400; letter-spacing: .13em; text-transform: uppercase; transition: color .3s; }
 .desktop-nav a:hover, .site-footer a:hover { color: var(--blue-dark); }
 .header-button { justify-self: end; padding: 16px 27px; color: var(--white); background: var(--blue-dark); border-radius: 2px; font-size: 12px; font-weight: 700; letter-spacing: .13em; text-transform: uppercase; transition: background .3s; }
