@@ -2,10 +2,18 @@ import Image from "next/image";
 import Link from "next/link";
 import { Footer, Header } from "../site-components";
 
+const packageFeatures = [
+  "Approximately 60–120 professionally edited images",
+  "Your choice of 20 high-resolution digital files",
+  "Personalized location and wardrobe guidance",
+  "Private online viewing gallery",
+  "Professional prints, albums, and framed artwork available for purchase",
+];
+
 const packages = [
-  { name: "Family", price: "950", note: "One-hour outdoor session", features: ["Approximately 80–100 edited proofs", "Your choice of 20 digital files", "Location and wardrobe guidance", "Private online viewing gallery", "Up to $150 product credit"] },
-  { name: "Newborn", price: "1,050", note: "Two-to-three-hour session", features: ["Baby-led pace with plenty of breaks", "Approximately 80–100 edited proofs", "Your choice of 20 digital files", "Private online viewing gallery", "Up to $150 product credit"] },
-  { name: "Maternity", price: "900", note: "One-hour outdoor session", features: ["Approximately 80–100 edited proofs", "Your choice of 20 digital files", "Location and wardrobe guidance", "Private online viewing gallery", "Up to $150 product credit"] },
+  { name: "Family", price: "975", note: "One-hour outdoor session", features: packageFeatures },
+  { name: "Newborn", price: "1,050", note: "Two-to-three-hour session", features: packageFeatures },
+  { name: "Maternity", price: "900", note: "One-hour outdoor session", features: packageFeatures },
 ];
 
 export default function Pricing() {
