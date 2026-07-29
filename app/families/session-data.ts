@@ -7,6 +7,7 @@ export type FamilySession = {
   images: {
     src: string;
     alt: string;
+    orientation?: "portrait" | "landscape";
   }[];
 };
 

@@ -185,6 +185,16 @@ h1 em { font-family: var(--font-hand); font-size: 1.05em; font-weight: 400; }
 .family-session-image img { object-fit: contain; }
 .family-session-image--1 { width: min(78%, 920px); min-height: min(86vw, 980px); margin-left: auto; }
 .family-session-image--2 { width: min(88%, 1120px); margin-right: auto; }
+.family-session-gallery--tiled { display: block; columns: 260px; column-gap: clamp(14px, 1.6vw, 24px); }
+.family-session-gallery--tiled .family-session-image--tile {
+  width: 100%;
+  min-height: 0;
+  margin: 0 0 clamp(14px, 1.6vw, 24px);
+  break-inside: avoid;
+}
+.family-session-gallery--tiled .family-session-image--portrait { aspect-ratio: 2 / 3; }
+.family-session-gallery--tiled .family-session-image--landscape { aspect-ratio: 3 / 2; }
+.family-session-gallery--tiled .family-session-image img { object-fit: cover; }
 .family-session-cta { padding: var(--section-space) 24px; text-align: center; }
 .family-session-cta h2 { margin: 20px 0 34px; color: #34465d; font: 400 clamp(44px, 5vw, 68px)/1.04 var(--font-serif); }
 .family-session-cta h2 em { font-style: italic; }
@@ -366,6 +376,11 @@ h1 em { font-family: var(--font-hand); font-size: 1.05em; font-weight: 400; }
   .family-session-image,
   .family-session-image--1,
   .family-session-image--2 { width: 100%; min-height: 120vw; margin: 0; }
+  .family-session-gallery--tiled { columns: 220px; column-gap: 14px; }
+  .family-session-gallery--tiled .family-session-image--tile {
+    min-height: 0;
+    margin-bottom: 14px;
+  }
   .experience-steps { padding-inline: 23px; }
   .steps, .pricing-list { grid-template-columns: 1fr; gap: 24px; }
   .pricing-list { width: calc(100vw - 44px); }

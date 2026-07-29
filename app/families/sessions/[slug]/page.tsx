@@ -26,6 +26,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 export default async function FamilySessionPage({ params }: Props) {
   const session = getFamilySession((await params).slug);
   if (!session) notFound();
+  const isWarkSession = session.slug === "graham-family-walnut-creek";
 
   return (
     <>
@@ -37,15 +38,26 @@ export default async function FamilySessionPage({ params }: Props) {
           <p>{session.description}</p>
         </header>
 
-        <div className="family-session-gallery">
+        <div className={`family-session-gallery${isWarkSession ? " family-session-gallery--tiled" : ""}`}>
           {session.images.map((image, index) => (
-            <figure className={`family-session-image family-session-image--${index % 3}`} key={image.src}>
+            <figure
+              className={
+                isWarkSession
+                  ? `family-session-image family-session-image--tile family-session-image--${image.orientation ?? "portrait"}`
+                  : `family-session-image family-session-image--${index % 3}`
+              }
+              key={image.src}
+            >
               <Image
                 src={image.src}
                 alt={image.alt}
                 fill
                 priority={index === 0}
-                sizes="(max-width: 760px) 100vw, 1200px"
+                sizes={
+                  isWarkSession
+                    ? "(max-width: 620px) calc(100vw - 36px), (max-width: 940px) 50vw, (max-width: 1260px) 33vw, 25vw"
+                    : "(max-width: 760px) 100vw, 1200px"
+                }
               />
             </figure>
           ))}
