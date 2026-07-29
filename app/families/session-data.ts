@@ -55,8 +55,8 @@ export const familySessions: FamilySession[] = [
     description: "Warm light, a beloved family dog, and relaxed portraits that leave room for siblings to simply be themselves.",
     cover: "/east-bay-family-photography-welch-family-dog.jpg",
     images: [
-      { src: "/east-bay-family-photography-welch-family-dog.jpg", alt: "Welch family portrait with their dog in warm autumn light" },
-      { src: "/walnut-creek-family-photography-welch-siblings-black-white.jpg", alt: "Welch siblings sharing a quiet moment on an oak tree" },
+      { src: "/east-bay-family-photography-welch-family-dog.jpg", alt: "Welch family portrait with their dog in warm autumn light", orientation: "portrait" },
+      { src: "/walnut-creek-family-photography-welch-siblings-black-white.jpg", alt: "Welch siblings sharing a quiet moment on an oak tree", orientation: "landscape" },
     ],
   },
   {
@@ -66,9 +66,9 @@ export const familySessions: FamilySession[] = [
     description: "An expansive California evening with a family of seven—easy connection, big energy, and everyone together in one beautiful frame.",
     cover: "/home-hero-krueger-expanded-2.jpg",
     images: [
-      { src: "/home-hero-krueger-expanded-2.jpg", alt: "Krueger family walking together through the California hills" },
-      { src: "/home-hero-krueger.jpg", alt: "Krueger family at golden hour in the East Bay" },
-      { src: "/walnut-creek-family-photography-krueger-golden-hour.jpg", alt: "Krueger family walking through glowing grass at sunset" },
+      { src: "/home-hero-krueger-expanded-2.jpg", alt: "Krueger family walking together through the California hills", orientation: "landscape" },
+      { src: "/home-hero-krueger.jpg", alt: "Krueger family at golden hour in the East Bay", orientation: "landscape" },
+      { src: "/walnut-creek-family-photography-krueger-golden-hour.jpg", alt: "Krueger family walking through glowing grass at sunset", orientation: "landscape" },
     ],
   },
   {
@@ -78,8 +78,8 @@ export const familySessions: FamilySession[] = [
     description: "Three brothers, one wide-open hillside, and a session built around motion instead of perfect stillness.",
     cover: "/walnut-creek-family-photography-silva-boys-running-01.jpg",
     images: [
-      { src: "/walnut-creek-family-photography-silva-boys-running-01.jpg", alt: "Silva brothers running through a sunlit California field" },
-      { src: "/walnut-creek-family-photography-silva-boys-running-02.jpg", alt: "Three brothers running together beneath a golden oak tree" },
+      { src: "/walnut-creek-family-photography-silva-boys-running-01.jpg", alt: "Silva brothers running through a sunlit California field", orientation: "landscape" },
+      { src: "/walnut-creek-family-photography-silva-boys-running-02.jpg", alt: "Three brothers running together beneath a golden oak tree", orientation: "landscape" },
     ],
   },
   {
@@ -89,9 +89,9 @@ export const familySessions: FamilySession[] = [
     description: "Soft green hills, golden evening light, and a wonderfully real mix of closeness, curiosity, and play.",
     cover: "/walnut-creek-family-photography-clements-sunset-hills.jpg",
     images: [
-      { src: "/walnut-creek-family-photography-clements-sunset-hills.jpg", alt: "Clements family together in the green East Bay hills" },
-      { src: "/bay-area-family-photography-chambliss-california-hills.jpg", alt: "A family walking across the rolling California hills at sunset" },
-      { src: "/east-bay-family-photography-thompson-sunset-session.jpg", alt: "A joyful family moving together through golden grass" },
+      { src: "/walnut-creek-family-photography-clements-sunset-hills.jpg", alt: "Clements family together in the green East Bay hills", orientation: "landscape" },
+      { src: "/bay-area-family-photography-chambliss-california-hills.jpg", alt: "A family walking across the rolling California hills at sunset", orientation: "landscape" },
+      { src: "/east-bay-family-photography-thompson-sunset-session.jpg", alt: "A joyful family moving together through golden grass", orientation: "landscape" },
     ],
   },
 ];
