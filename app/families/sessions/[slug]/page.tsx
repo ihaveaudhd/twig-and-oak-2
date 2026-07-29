@@ -9,28 +9,6 @@ type Props = {
   params: Promise<{ slug: string }>;
 };
 
-const warkLandscapePhotos = new Set([
-  "10006",
-  "10009",
-  "10011",
-  "10012",
-  "10013",
-  "10016",
-  "10021",
-  "10022",
-  "10023",
-  "10025",
-]);
-
-function getWarkPhotoAspectRatio(src: string) {
-  if (!src.startsWith("/walnut-creek-family-photography-oak-tree-sunset-")) {
-    return undefined;
-  }
-
-  const photoNumber = src.match(/(\d{5})\.jpg$/)?.[1];
-  return warkLandscapePhotos.has(photoNumber ?? "") ? "3 / 2" : "2 / 3";
-}
-
 export function generateStaticParams() {
   return familySessions.map(({ slug }) => ({ slug }));
 }
@@ -60,15 +38,8 @@ export default async function FamilySessionPage({ params }: Props) {
         </header>
 
         <div className="family-session-gallery">
-          {session.images.map((image, index) => {
-            const aspectRatio = getWarkPhotoAspectRatio(image.src);
-
-            return (
-            <figure
-              className={`family-session-image family-session-image--${index % 3}${aspectRatio ? " family-session-image--intrinsic" : ""}`}
-              key={image.src}
-              style={aspectRatio ? { aspectRatio } : undefined}
-            >
+          {session.images.map((image, index) => (
+            <figure className={`family-session-image family-session-image--${index % 3}`} key={image.src}>
               <Image
                 src={image.src}
                 alt={image.alt}
@@ -77,8 +48,7 @@ export default async function FamilySessionPage({ params }: Props) {
                 sizes="(max-width: 760px) 100vw, 1200px"
               />
             </figure>
-            );
-          })}
+          ))}
         </div>
 
         <section className="family-session-cta">
