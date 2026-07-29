@@ -16,7 +16,7 @@ export const familySessions: FamilySession[] = [
     title: "The Wark Family",
     location: "Walnut Creek · Golden hour",
     description: "A playful evening beneath the oak trees, filled with movement, laughter, and the kind of moments children make entirely their own.",
-    cover: "/walnut-creek-family-photography-oak-tree-sunset-10007.jpg",
+    cover: "/cover-walnut-creek-family-photography-oak-tree-sunset-10021.jpg",
     images: [],
   },
   {
