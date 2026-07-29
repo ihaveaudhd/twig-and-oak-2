@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { EditorialCarousel } from "./editorial-carousel";
 import { FullSessionPreviews } from "./families/full-session-previews";
+import type { FamilySession } from "./families/session-data";
 import { Footer, Header } from "./site-components";
 
 type GalleryItem = string | {
@@ -12,9 +13,38 @@ type GalleryItem = string | {
 type Props = {
   eyebrow: string; title: string; italic: string; description: string;
   hero: string; heroPosition?: string; heroBleed?: boolean; splitHero?: boolean; editorialGallery?: boolean; detail: string; gallery: GalleryItem[]; prompt: string;
+  editorialTitle?: string;
+  editorialItalic?: string;
+  editorialQuote?: string;
+  sessions?: FamilySession[];
+  sessionBasePath?: string;
+  sessionHeadingItalic?: string;
+  sessionIntro?: string;
+  sessionImageAlt?: (session: FamilySession) => string;
 };
 
-export function ServicePage({ eyebrow, title, italic, description, hero, heroPosition = "center", heroBleed = false, splitHero = false, editorialGallery = false, detail, gallery, prompt }: Props) {
+export function ServicePage({
+  eyebrow,
+  title,
+  italic,
+  description,
+  hero,
+  heroPosition = "center",
+  heroBleed = false,
+  splitHero = false,
+  editorialGallery = false,
+  detail,
+  gallery,
+  prompt,
+  editorialTitle = "Families,",
+  editorialItalic = "beautifully real.",
+  editorialQuote = "Your people. Exactly as they are.",
+  sessions,
+  sessionBasePath,
+  sessionHeadingItalic,
+  sessionIntro,
+  sessionImageAlt,
+}: Props) {
   return (
     <>
       <Header />
@@ -41,16 +71,24 @@ export function ServicePage({ eyebrow, title, italic, description, hero, heroPos
           </section>
         ))}
         {editorialGallery && (
-          <section className="editorial-gallery" aria-labelledby="families-gallery-heading">
+          <section className="editorial-gallery" aria-labelledby="portfolio-gallery-heading">
             <div className="editorial-gallery-heading">
               <p className="eyebrow">{eyebrow}</p>
-              <h2 id="families-gallery-heading">Families,<br /><em>beautifully real.</em></h2>
-              <p className="editorial-gallery-quote">Your people. Exactly as they are.</p>
+              <h2 id="portfolio-gallery-heading">{editorialTitle}<br /><em>{editorialItalic}</em></h2>
+              <p className="editorial-gallery-quote">{editorialQuote}</p>
             </div>
-            <EditorialCarousel images={gallery.map((image, i) => typeof image === "string" ? { src: image, alt: `Joyful California family photograph ${i + 1}` } : image)} />
+            <EditorialCarousel images={gallery.map((image, i) => typeof image === "string" ? { src: image, alt: `${editorialTitle.replace(",", "")} photography image ${i + 1}` } : image)} />
           </section>
         )}
-        {editorialGallery && <FullSessionPreviews />}
+        {editorialGallery && (
+          <FullSessionPreviews
+            sessions={sessions}
+            basePath={sessionBasePath}
+            headingItalic={sessionHeadingItalic}
+            intro={sessionIntro}
+            imageAlt={sessionImageAlt}
+          />
+        )}
         <section className={`editorial${editorialGallery ? " editorial--dark" : ""}`}>
           <p className="eyebrow">The heart of it</p>
           <div className="editorial-grid">
