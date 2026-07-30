@@ -36,7 +36,7 @@ export const newbornSessions: FamilySession[] = [
     title: "A Quiet Morning at Home",
     location: "Bay Area · At home",
     description: "A patient, baby-led newborn session filled with tiny details, family connection, and room for real life to unfold.",
-    cover: "/walnut-creek-newborn-photography-in-home-session-10618-2x3.jpg",
+    cover: "/walnut-creek-newborn-photography-in-home-session-10618-2x3-fixed.jpg",
     images: [
       { src: "https://images.unsplash.com/photo-1519689680058-324335c77eba?auto=format&fit=crop&w=1400&q=90", alt: "Newborn baby resting peacefully at home", orientation: "portrait" },
       { src: "https://images.unsplash.com/photo-1544126592-807ade215a0b?auto=format&fit=crop&w=1800&q=90", alt: "Tender newborn moment during an at-home session", orientation: "landscape" },
