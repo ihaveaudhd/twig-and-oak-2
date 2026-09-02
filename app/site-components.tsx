@@ -16,7 +16,7 @@ const navItems = [
 export function Logo() {
   return (
     <span className="logo-lockup">
-      <span>TWIG &amp; OAK</span>
+      <span>TWIG <i className="logo-ampersand">&amp;</i> OAK</span>
       <small>PHOTOGRAPHY</small>
     </span>
   );
