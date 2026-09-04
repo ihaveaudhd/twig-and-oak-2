@@ -29,9 +29,9 @@ export default function StyleGuide() {
         <section className="style-section">
           <p className="eyebrow">02 · Typography</p>
           <div className="type-specimens">
-            <div><small>Editorial display · Playfair Display</small><h2>Photos that feel like your family.</h2></div>
+            <div><small>Editorial display · Cormorant Garamond</small><h2>Photos that feel like your family.</h2></div>
             <div><small>Body · Lato</small><p>Joyful, timeless photography for the moments you never want to forget. Calm, clear copy stays narrow and highly readable.</p></div>
-            <div><small>Accent · Caveat</small><p className="handwritten">Yes, wild kids are welcome.</p></div>
+            <div><small>Editorial accent · Cormorant Garamond</small><p className="handwritten">Yes, wild kids are welcome.</p></div>
           </div>
         </section>
         <section className="style-section">

@@ -1,5 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@400;600&family=Cormorant+Garamond:ital,wght@0,300;0,400;1,400&family=Lato:wght@300;400;700&family=Playfair+Display:ital,wght@0,400;1,400&display=swap");
-
 :root {
   --ivory: #fbf8f3;
   --navy: #27364b;
@@ -8,9 +6,9 @@
   --gold: #e5b54a;
   --gray: #e8e5e0;
   --white: #fff;
-  --font-serif: "Playfair Display", Georgia, serif;
-  --font-sans: "Lato", Arial, sans-serif;
-  --font-hand: "Caveat", cursive;
+  --font-serif: var(--font-cormorant), serif;
+  --font-sans: var(--font-lato), sans-serif;
+  --font-hand: var(--font-cormorant), serif;
   --page: min(1400px, calc(100vw - 96px));
   --ease: cubic-bezier(.22, 1, .36, 1);
   --section-space: clamp(96px, 9vw, 160px);
@@ -34,8 +32,8 @@ button { color: inherit; }
 .site-header.families-header { background: #f4efe8; box-shadow: none; }
 .brand { justify-self: start; }
 .logo-lockup { display: flex; width: max-content; flex-direction: column; align-items: center; color: #27364b; line-height: 1; }
-.logo-lockup > span { font: 300 36px/.95 "Cormorant Garamond", Georgia, serif; letter-spacing: .09em; }
-.logo-ampersand { display: inline-block; margin: 0 -.02em; font-family: "Cormorant Garamond", Georgia, serif; font-size: 1.03em; font-style: normal; font-weight: 300; line-height: .8; transform: translateY(.015em); }
+.logo-lockup > span { font: 300 36px/.95 var(--font-serif); letter-spacing: .09em; }
+.logo-ampersand { display: inline-block; margin: 0 -.02em; font-family: var(--font-serif); font-size: 1.03em; font-style: normal; font-weight: 300; line-height: .8; transform: translateY(.015em); }
 .logo-lockup small { margin-top: 13px; font: 700 10px/1 var(--font-sans); letter-spacing: .55em; padding-left: .55em; }
 .desktop-nav { display: flex; align-items: center; gap: clamp(20px, 2.4vw, 38px); }
 .desktop-nav a { font-size: 14px; font-weight: 400; letter-spacing: .17em; text-transform: uppercase; transition: color .3s; }
@@ -93,7 +91,7 @@ h1 em { font-family: var(--font-hand); font-size: 1.05em; font-weight: 400; }
 .testimonial-grid { display: grid; grid-template-columns: repeat(4, 1fr); max-width: 1400px; margin: auto; }
 .testimonial-grid blockquote { position: relative; min-height: 190px; margin: 0; padding: 8px 34px 0; border-right: 1px solid var(--gray); font-family: var(--font-sans); }
 .testimonial-grid blockquote:last-child { border: 0; }
-.quote-mark { position: absolute; left: 13px; top: 1px; color: var(--gold); font: 52px/.7 Georgia, serif; }
+.quote-mark { position: absolute; left: 13px; top: 1px; color: var(--gold); font: 52px/.7 var(--font-serif); }
 .testimonial-grid p { margin: 0 0 24px; font-size: 14.5px; line-height: 1.9; }
 .testimonial-grid cite { font-size: 11px; font-style: normal; font-weight: 400; letter-spacing: .09em; text-transform: uppercase; }
 
@@ -155,7 +153,7 @@ h1 em { font-family: var(--font-hand); font-size: 1.05em; font-weight: 400; }
 .editorial-carousel-track::-webkit-scrollbar { display: none; }
 .editorial-carousel-slide { position: relative; flex: 0 0 100%; width: 100%; height: min(82vh, 900px); margin: 0; scroll-snap-align: start; background: transparent; }
 .editorial-carousel-slide img { object-fit: contain; }
-.editorial-carousel-arrow { position: absolute; z-index: 2; top: 50%; width: 56px; height: 56px; padding: 0; border: 1px solid rgba(39,54,75,.18); border-radius: 50%; background: rgba(251,248,243,.94); color: var(--navy); font: 400 30px/1 var(--sans); cursor: pointer; transform: translateY(-50%); transition: background .3s var(--ease), transform .3s var(--ease); }
+.editorial-carousel-arrow { position: absolute; z-index: 2; top: 50%; width: 56px; height: 56px; padding: 0; border: 1px solid rgba(39,54,75,.18); border-radius: 50%; background: rgba(251,248,243,.94); color: var(--navy); font: 400 30px/1 var(--font-sans); cursor: pointer; transform: translateY(-50%); transition: background .3s var(--ease), transform .3s var(--ease); }
 .editorial-carousel-arrow:hover { background: var(--white); transform: translateY(-50%) scale(1.04); }
 .editorial-carousel-arrow:focus-visible { outline: 3px solid var(--gold); outline-offset: 3px; }
 .editorial-carousel-arrow--previous { left: 22px; }
