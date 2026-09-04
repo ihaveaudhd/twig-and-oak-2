@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@400;600&family=Cormorant+Garamond:ital,wght@0,400;1,400&family=Lato:wght@300;400;700&family=Playfair+Display:ital,wght@0,400;1,400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@400;600&family=Cormorant+Garamond:ital,wght@0,300;0,400;1,400&family=Lato:wght@300;400;700&family=Playfair+Display:ital,wght@0,400;1,400&display=swap");
 
 :root {
   --ivory: #fbf8f3;
@@ -35,7 +35,7 @@ button { color: inherit; }
 .brand { justify-self: start; }
 .logo-lockup { display: flex; width: max-content; flex-direction: column; align-items: center; color: #27364b; line-height: 1; }
 .logo-lockup > span { font: 400 36px/.95 var(--font-serif); letter-spacing: .09em; }
-.logo-ampersand { display: inline-block; margin: 0 -.02em; font-family: "Cormorant Garamond", Georgia, serif; font-size: 1.16em; font-style: normal; font-weight: 400; line-height: .8; transform: translateY(.025em); }
+.logo-ampersand { display: inline-block; margin: 0 -.02em; font-family: "Cormorant Garamond", Georgia, serif; font-size: 1.03em; font-style: normal; font-weight: 300; line-height: .8; transform: translateY(.015em); }
 .logo-lockup small { margin-top: 13px; font: 700 10px/1 var(--font-sans); letter-spacing: .55em; padding-left: .55em; }
 .desktop-nav { display: flex; align-items: center; gap: clamp(20px, 2.4vw, 38px); }
 .desktop-nav a { font-size: 14px; font-weight: 400; letter-spacing: .17em; text-transform: uppercase; transition: color .3s; }
