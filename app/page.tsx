@@ -29,17 +29,6 @@ export default function Home() {
       <Header />
       <main>
         <section className="home-hero">
-          <div className="hero-copy">
-            <p className="eyebrow">Joyful. Timeless. Real.</p>
-            <span className="gold-rule" />
-            <h1>Photos that<br />feel like<br /><em>your</em> family.</h1>
-            <p className="hero-intro">Joyful, timeless photography for the moments you never want to forget.</p>
-            <div className="button-row">
-              <Link className="button primary-button" href="#galleries">View the galleries</Link>
-              <Link className="button secondary-button" href="/pricing">Plan your session</Link>
-            </div>
-            <p className="handwritten">Yes, wild kids and<br />reluctant dads are welcome. <span>♡</span></p>
-          </div>
           <div className="hero-photo">
             <Image src="/home-hero-krueger-expanded-2.jpg" alt="A family walking together through golden California hills at sunset" fill priority sizes="100vw" />
           </div>
