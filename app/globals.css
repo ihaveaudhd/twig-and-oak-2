@@ -32,8 +32,8 @@ button { color: inherit; }
 .site-header.families-header { background: #f4efe8; box-shadow: none; }
 .brand { justify-self: start; }
 .logo-lockup { display: flex; width: max-content; flex-direction: column; align-items: center; color: #27364b; line-height: 1; }
-.logo-lockup > span { font: 300 36px/.95 var(--font-serif); letter-spacing: .09em; }
-.logo-ampersand { display: inline-block; margin: 0 -.02em; font-family: var(--font-serif); font-size: 1.03em; font-style: normal; font-weight: 300; line-height: .8; transform: translateY(.015em); }
+.logo-lockup > span { font: 330 36px/.95 var(--font-serif); letter-spacing: .09em; }
+.logo-ampersand { display: inline-block; margin: 0 -.02em; font-family: var(--font-serif); font-size: 1.03em; font-style: normal; font-weight: 330; line-height: .8; transform: translateY(.015em); }
 .logo-lockup small { margin-top: 13px; font: 700 10px/1 var(--font-sans); letter-spacing: .55em; padding-left: .55em; }
 .desktop-nav { display: flex; align-items: center; gap: clamp(20px, 2.4vw, 38px); }
 .desktop-nav a { font-size: 14px; font-weight: 400; letter-spacing: .17em; text-transform: uppercase; transition: color .3s; }
